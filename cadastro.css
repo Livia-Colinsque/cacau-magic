@@ -1,0 +1,167 @@
+.form {
+  --bg-light: #efefef;
+  --bg-dark: #707070;
+  --clr:rgb(120, 6, 143);
+  --clr-alpha: #9c9c9c60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form .input-span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="confirm"]
+{
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--clr-alpha);
+  outline: 2px solid var(--bg-dark);
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus,
+.form input[type="confirm"]:focus {
+  outline: 2px solid var(--clr);
+}
+
+.label {
+  align-self: flex-start;
+  color: var(--clr);
+  font-weight: 600;
+}
+
+.form .submit {
+  padding: 1rem 0.75rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 3rem;
+  background-color: var(--bg-dark);
+  color: var(--bg-light);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form .submit:hover {
+  background-color: var(--clr);
+  color: var(--bg-dark);
+}
+
+.span {
+  text-decoration: none;
+  color: var(--bg-dark);
+}
+
+.span a {
+  color: var(--clr);
+}
+body{
+  background-color: #ffffff;
+}
+p{
+  color: rgb(83, 6, 98);
+}
+h1{
+  color: rgb(83, 6, 98);
+}
+label{
+  color: rgb(83, 6, 98);
+}
+hr{
+  color: rgb(83, 6, 98);
+}
+footer{
+  background-color: rgb(83, 6, 98);
+  color: #000000;
+  padding: 40px 0 ;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.font-container{
+  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer-section{
+  flex-basis: 23%;
+  margin-bottom: 20px;
+}
+.footer-section h4{
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #000000;
+}
+.footer-section p, .footer-section ul{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+.footer-section ul{
+  list-style-type: none;
+}
+.footer-section ul li{
+  margin-bottom: 10px;
+}
+.footer-section ul li a{
+
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-section ul li a:hover{
+  color: #000000;
+}
+
+
+.Social-links a{
+  display: inline-block;
+  margin-right: 10px;
+  color: rgb(140, 127, 54);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.Social-links a:hover{
+  color: rgb(0, 0, 0);
+}
+
+.footer-bottom{
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px #000000;
+  font-size: 14px;
+}
+.footer-bottom p{
+  margin: 0;
+}
+.foto img{
+  margin: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 360px; 
+  
+}

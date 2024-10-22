@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="carrinho.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Carrinho</title>
+  <section>
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #66049f;
+          
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a, .dropbtn {
+          display: inline-block;
+          color: rgb(255, 255, 255);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: x-large;
+        }
+        
+        li a:hover, .dropdown:hover .dropbtn {
+          background-color: rgb(235, 172, 172);
+        }
+        
+        li.dropdown {
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #ffffff;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: rgb(167, 8, 109);
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {background-color: #ffffff;}
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
+        </section>
+</head>
+<body>
+
+  <section class="Menu" id="Menu">
+    <nav>
+        
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Produtos</a>
+                    <div class="dropdown-content">
+                      <a href="romance.html">Romance</a>
+                      <a href="script.js">Thriller e Suspense</a>
+                      <a href="script.js">Distopia</a>
+                      <a href="script.js">Fantasia</a>
+                      <a href="script.js">Crimes Reais</a>
+                      
+                     
+                 
+                    </div>
+                  </li>
+              <li><a href="#Sobre">Sobre</a></li>
+        
+              <li><a href="#Rodape">Contato</a></li>
+              <li><a href="login.html">Login</a></li>
+              <section class="Carrinho">
+                <li><a href="carrinho.html" ><img src="carrinho-removebg-preview.png" alt=""></a></li>
+              </section>
+              
+
+            </ul>
+       
+        </nav>
+        <br>
+        <br>
+        <br>
+  <main>
+  <section class="carrinho">
+    <table>
+      <thead>
+        <tr>
+          <th>Produtos</th>
+          <th>Quantidade</th>
+          <th>Preço Unitário</th>
+          <th>Total</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td>Produto Exemplo</td>
+        <td>
+          <input type="number" value="1" min="1" class="quantidade">
+        </td>
+        <td class="preco-unitario">R$ 50,00</td>
+        <td class="proco-total">R$ 50,00</td>
+        <td>
+          <button class="remover-produto">Remover</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Produto Exemplo</td>
+        <td>
+          <input type="number" value="2" min="1" class="quantidade">
+        </td>
+        <td class="preco-unitario">R$ 50,00</td>
+        <td class="proco-total">R$ 50,00</td>
+        <td>
+          <button class="remover-produto">Remover</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="total-final">
+      <h3>Total Final: <span id="total-final">R$ 110,00</span></h3>
+    </div>
+  </section>
+ </main>
+ <script src="carrinho.js"></script>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+ <section class="Rodape" id="Rodape"></section>
+           
+ <footer>
+     
+    <div class="Footer-container">
+     <div class="Footer-section">
+         <h4>Sobre Nós</h4>
+         <p>Somos uma empresa dedicada a fornecer os melhores titulos de livros para nossos clientes
+         </p>
+     </div>
+
+     <div class="Footer-section">
+         <h4>Links Rapidos</h4>
+         <div class="Links">
+             <a href="#Home">Home</a>
+             <br>
+             <a href="#Foto">Produtos</a>
+             <br>
+             <a href="#Sobre">Sobre</a>
+
+         </div>
+     </div>
+     
+
+     <div class="Footer-section">
+         <h4>Contato</h4>
+         <p>emailbook@gmail.com</p>
+         <p>Telefone: (19)9999-0000</p>
+         <p>Endereço: Rua Olá 999 São Paulo, Sp</p>
+
+
+     </div>
+     <div class="Footer-section">
+         <h4>Siga-nos</h4>
+         <div class="Social-links">
+             <a href="https://pt-br.facebook.com/" target="_blank">facebook</a>
+             <a href="https://x.com/" target="_blank">Twiter</a>
+             <a href="https://www.instagram.com/" target="_blank">instagram</a>
+
+         </div>
+
+     </div>
+
+    </div>
+    <div class="footer-bottom">
+     <p>&copy : 2024 Empresa. Todos os Direitos reservados</p>
+    </div>
+    
+ </footer>
+</body>
+</html>
