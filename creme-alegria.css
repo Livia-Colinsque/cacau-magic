@@ -1,0 +1,181 @@
+body{
+  text-align: center;
+}
+html{
+  width: 1000;
+  height: 1000;
+  background-color: #ffffff;
+
+}
+
+.Produto{
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px  rgba(0, 0, 0, 0.1);
+
+}
+.imagens-produto{
+  flex: 1;
+}
+.imagem-principal {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+.miniatura img{
+  width: 70px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.detalhes-produto{
+  flex: 1;
+}
+h2{
+  color: #ddd;
+}
+.descricao{
+  color: #615d0c;
+  margin-bottom: 15px;
+}
+.opcoes{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ddd;
+}
+select{
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+button {
+  padding: 10px; /* Espaçamento interno */
+  background-color: #84009e; /* Cor de fundo verde */
+  color: #fff; /* Cor do texto branco */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de pointer ao passar sobre o botão */
+  font-size: 16px; /* Tamanho da fonte */
+}
+/* Estiliza o botão ao passar o mouse (hover) */
+button:hover {
+  background-color: #500361; /* Cor verde mais clara */
+}
+/* Estiliza a seção de comentários */
+.comentarios {
+  margin-top: 20px; /* Espaçamento superior */
+}
+/* Estiliza cada comentário */
+.comentario {
+  display: flex; /* Exibe a foto e o texto lado a lado */
+  align-items: center; /* Alinha a foto e o texto verticalmente */
+  background-color: #000000; /* Fundo branco */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do comentário */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+/* Estiliza a foto do usuário */
+.foto-usuario {
+  width: 50px; /* Largura da foto */
+  height: 50px; /* Altura da foto */
+  border-radius: 50%; /* Deixa a imagem redonda */
+  margin-right: 15px; /* Espaçamento à direita da foto */
+}
+/* Estiliza o texto dos comentários */
+.comentario p {
+  color: #ffffff
+}
+
+
+footer{
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 0 ;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.font-container{
+  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer-section{
+  flex-basis: 23%;
+  margin-bottom: 20px;
+}
+.footer-section h4{
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.footer-section p, .footer-section ul{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+.footer-section ul{
+  list-style-type: none;
+}
+.footer-section ul li{
+  margin-bottom: 10px;
+}
+.footer-section ul li a{
+
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-section ul li a:hover{
+  color: #ffffff;
+}
+
+
+.Social-links a{
+  display: inline-block;
+  margin-right: 10px;
+  color: rgb(140, 127, 54);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.Social-links a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.footer-bottom{
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px #ffffff;
+  font-size: 14px;
+}
+.footer-bottom p{
+  margin: 0;
+}
+.detalhes-produto p{
+  text-align:justify;
+  color: #ddd;
+}
+.detalhes-produto h3{
+  color: #938989;
+}
+.detalhes-produto li{
+  text-align: justify;
+  color: #fff;
+}
+.Carrinho li a img{
+  max-width: 50px;
+  }
