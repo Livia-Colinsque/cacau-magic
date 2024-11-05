@@ -6,9 +6,7 @@ h1{
     font-size:xx-large;
     font-style: italic;
 }
-.logo img{
-  max-width: 50px;
-}
+
 .Cards img{
     margin: 20px;
     width: 150px;
@@ -24,11 +22,6 @@ html{
 
 }
 h2{
-    color:  rgb(210, 6, 224);
-}
-.Textoprincipal h4{
-    width: 50%;
-    text-align: justify;
     color:  rgb(210, 6, 224);
 }
 
@@ -53,6 +46,11 @@ footer{
   background-color: #500361;
   color: #ffffff;
   padding: 40px 0;
+  text-align: center;
+}
+.footer-bottom {
+  font-size: 12px;
+  margin-top: 20px;
 }
 
 .footer-container{
@@ -67,6 +65,7 @@ footer{
 .footer-section{
   flex-basis: 23%;
   margin-bottom: 20px;
+  max-width: 300px;
 }
 
 .footer-section h4{
@@ -206,16 +205,6 @@ footer{
 
     
 }
-.Genero h4{
-    font-size: xx-large;
-    background-color: rgb(54, 4, 4);
-    color: #615d0c;
-    text-align: center;
-}
-.Kindle h2{
-    color: #e7e7e7;
-}
-
 .grid-gallery-container{
 display: grid; /*Ativa o O CSS Grid */
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /*Define o
@@ -239,15 +228,8 @@ overflow: hidden;
 width: 100%; /*Garante que a imagem preencha todo o espaço disponivel*/
 height: auto; /* Mantém a a proporção da imagem*/
 }
-.Galeria h3{
-    color: rgb(255, 255, 255);
-    font-size: xx-large;
-  
-}
-.Carrinho li a img{
-max-width: 50px;
 
-}
+
 
 div.gallery {
   margin: 50px;
@@ -281,6 +263,116 @@ div.desc {
   color: #000000;
   font-style: arial;
 }
+
+.buttoncar {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 35px;
+}
+.searchBox {
+  display: flex;
+  max-width: 300px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #560384;
+  border-radius: 30px;
+  position: relative;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #73047d 0%, #000000 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+/*hover effect*/
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+/*button pressing effect*/
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 24px 46px 24px 26px;
+}
+
+
+.vendidos h1 {
+  color: #000000;
+  text-align: center;
+  font-family: "Raleway";
+  
+}
+
+/* Para a galeria tradicional */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* Para a galeria tipo grid */
+.grid-gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.grid-gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+.Cards img {
+  margin: 20px;
+  width: 100px;  /* Diminui a largura */
+  height: 100px;  /* Diminui a altura proporcionalmente */
+  border-radius: 50%; /* Faz a imagem ficar perfeitamente circular */
+  object-fit: cover; /* Garante que a imagem cubra completamente o espaço sem distorcer */
+}
+
 
 
 
