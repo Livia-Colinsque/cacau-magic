@@ -42,61 +42,48 @@ p
     color: rgb(255, 255, 255);
 }
 
-footer{
+footer {
   background-color: #500361;
-  color: #ffffff;
-  padding: 40px 0;
+  color: #fff;
+  padding: 40px 20px;
   text-align: center;
 }
-.footer-bottom {
-  font-size: 12px;
-  margin-top: 20px;
-}
 
-.footer-container{
+.footer-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  justify-content: space-around;
+  gap: 20px;
 }
 
-.footer-section{
-  flex-basis: 23%;
+.footer-section {
+  flex-basis: 30%;
   margin-bottom: 20px;
-  max-width: 300px;
 }
 
-.footer-section h4{
-  margin-bottom: 15px;
-  font-size: 20px;
+.footer-section h4 {
+  font-size: 18px;
   color: #c300ff;
 }
 
-.footer-section p, .footer-section ul{
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  font-size: 115%;
+.footer-section p, .footer-section ul {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-.footer-section ul{
-  list-style-type: none;
-}
-
-.footer-section ul li{
-  margin-bottom: 10px;
-}
-
-.footer-section ul li a{
+.footer-section a {
   color: #7a0376;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.footer-section ul li a:hover{
-  color: #000000 ;
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  font-size: 12px;
+  margin-top: 20px;
 }
 .Social-links a{
   display: inline-block;
@@ -371,6 +358,26 @@ button:active {
   height: 100px;  /* Diminui a altura proporcionalmente */
   border-radius: 50%; /* Faz a imagem ficar perfeitamente circular */
   object-fit: cover; /* Garante que a imagem cubra completamente o espaço sem distorcer */
+}
+@media (max-width: 768px) {
+  /* Ajustes para telas pequenas */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .footer-section {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
 
 
