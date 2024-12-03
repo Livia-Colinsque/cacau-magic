@@ -379,6 +379,28 @@ button:active {
     text-align: center;
   }
 }
+/* Estilo para a galeria de produtos */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Organiza as imagens em várias colunas */
+  gap: 20px;
+  justify-items: center;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.desc {
+  text-align: center;
+  color: #66049f;
+  font-size: 16px;
+  margin-top: 10px;
+}
 
 
 
